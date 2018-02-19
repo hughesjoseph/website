@@ -1,0 +1,144 @@
+::-webkit-scrollbar {
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px blue); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px blue; 
+}
+
+@font-face {
+    font-family: "druk";
+    src: url(fonts/druk.otf);
+}
+
+html, body {
+width: 100%;
+margin: 0px; 
+padding: 0px;
+background-color:#e01a00;
+}
+
+#title {
+	width:100%;
+	text-align:center;
+	top:0px;
+	padding:0px;
+	display: inline-block;
+}
+
+#title p {
+	font-family: 'druk';
+	font-size: 3.27vw;	
+	display: inline-block;
+	line-height: 0px;
+	margin-top:30px;
+	margin-bottom:0px;
+}
+
+#left {
+	width:20%;
+	float:left;
+}
+
+.intro_text {
+	font-family: arial;
+	font-size: 12px;
+	padding-left:10px;
+}
+
+.intro_text img {
+	width:100%;
+}
+
+.cv_text {
+	font-family: arial;
+	font-size: 12px;
+	font-style:bold;
+	padding-left:10px;
+}
+
+.cv_text img {
+	width:20px;
+}
+
+.intro_text p {
+	font-family: arial;
+}
+
+#project {
+	width:80%;
+	min-height:10vh;
+	float:right;
+}
+
+.image_frame {
+	text-align:center;
+	width:75%;
+	float:left;
+}
+
+.image_frame img {
+	width:94%;
+	padding-top: 15px;
+}
+
+.image_frame iframe {
+	width:100%;
+}
+
+.title_frame {
+	font-family: arial;
+	font-size: 12px;
+	font-style:bold;
+	width:25%;
+	float:left;
+	padding-bottom:20px;
+}
+
+.title_frame p {
+	padding-right:10px;
+}
+
+.title_frame img {
+	width:20%;
+}
+
+#cursor {
+  position: absolute;
+  width:10px;
+  height:10px;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+#spraycanbutton {
+	position:fixed;
+	right:0px;
+	bottom:0px;
+}
+
+#artiststatement {
+	display: none;
+}
+
+#image_frame {
+	width:360px;
+	position:absolute;
+	top:10%;
+    right: 0;
+    margin: auto;
+    cursor:move;
+}
+
+#imagebig img {
+	width:100%;
+}
+
+.image img{
+	float:left;
+}
