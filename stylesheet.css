@@ -1,14 +1,5 @@
-::-webkit-scrollbar {
-}
- 
-::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px blue); 
-    border-radius: 10px;
-}
- 
-::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px blue; 
+::-webkit-scrollbar { 
+    display: none; 
 }
 
 @font-face {
@@ -17,10 +8,11 @@
 }
 
 html, body {
+overflow:hidden;
 width: 100%;
 margin: 0px; 
 padding: 0px;
-background-color:#e01a00;
+background-color:white;
 }
 
 #title {
@@ -29,6 +21,7 @@ background-color:#e01a00;
 	top:0px;
 	padding:0px;
 	display: inline-block;
+		padding-bottom:10px;
 }
 
 #title p {
@@ -38,74 +31,60 @@ background-color:#e01a00;
 	line-height: 0px;
 	margin-top:30px;
 	margin-bottom:0px;
+
 }
 
 #left {
-	width:20%;
+	width:15%;
+	height:100vh;
 	float:left;
+	border-right: 1px solid black;
+	box-sizing:border-box;
 }
 
 .intro_text {
 	font-family: arial;
-	font-size: 12px;
+	font-size: 13px;
 	padding-left:10px;
+	padding-right:10px;
 }
 
 .intro_text img {
 	width:100%;
 }
 
-.cv_text {
-	font-family: arial;
-	font-size: 12px;
-	font-style:bold;
-	padding-left:10px;
-}
-
-.cv_text img {
-	width:20px;
-}
-
-.intro_text p {
-	font-family: arial;
-}
-
-#project {
-	width:80%;
-	min-height:10vh;
-	float:right;
-}
-
-.image_frame {
+#projects {
+	height:100vh;
+	overflow-y: scroll;
+	width:70%;
+	height:100vh;
+	float:left;
 	text-align:center;
-	width:75%;
-	float:left;
 }
 
-.image_frame img {
-	width:94%;
-	padding-top: 15px;
+.image_width img {
+	width:97%;
+	margin-bottom:5px;
 }
 
-.image_frame iframe {
-	width:100%;
+.image_height img {
+	width:48.24%;
+	margin-bottom:5px;
 }
 
-.title_frame {
+#right {
+	width:15%;
+	height:100vh;
+	float:right;
+	border-left: 1px solid black;
+	box-sizing:border-box;
+}
+
+.right_text {
 	font-family: arial;
-	font-size: 12px;
-	font-style:bold;
-	width:25%;
-	float:left;
-	padding-bottom:20px;
-}
-
-.title_frame p {
+	font-size: 13px;
+	padding-left:10px;
 	padding-right:10px;
-}
-
-.title_frame img {
-	width:20%;
 }
 
 #cursor {
@@ -120,25 +99,4 @@ background-color:#e01a00;
 	position:fixed;
 	right:0px;
 	bottom:0px;
-}
-
-#artiststatement {
-	display: none;
-}
-
-#image_frame {
-	width:360px;
-	position:absolute;
-	top:10%;
-    right: 0;
-    margin: auto;
-    cursor:move;
-}
-
-#imagebig img {
-	width:100%;
-}
-
-.image img{
-	float:left;
 }
