@@ -7,6 +7,14 @@
     src: url(fonts/druk.otf);
 }
 
+a {
+	color:black;
+}
+
+a:hover {
+	color:blue;
+}
+
 html, body {
 overflow:hidden;
 width: 100%;
@@ -35,22 +43,27 @@ background-color:white;
 }
 
 #left {
-	width:15%;
-	height:100vh;
 	float:left;
 	border-right: 1px solid black;
 	box-sizing:border-box;
+	overflow-y: scroll;
+}
+
+iframe {
+	width:15%;
+	height:100vh;
+	float:left;
 }
 
 .intro_text {
 	font-family: arial;
-	font-size: 13px;
+	font-size: 12px;
 	padding-left:10px;
 	padding-right:10px;
 }
 
 .intro_text img {
-	width:100%;
+	width:50%;
 }
 
 #projects {
@@ -60,6 +73,13 @@ background-color:white;
 	height:100vh;
 	float:left;
 	text-align:center;
+}
+
+#projects iframe {
+	width:97%;
+	display: block;
+    margin: 0 auto;
+    float:none;
 }
 
 .image_width img {
@@ -72,6 +92,10 @@ background-color:white;
 	margin-bottom:5px;
 }
 
+.image_small img {
+	width:20%;
+}
+
 #right {
 	width:15%;
 	height:100vh;
@@ -82,7 +106,7 @@ background-color:white;
 
 .right_text {
 	font-family: arial;
-	font-size: 13px;
+	font-size: 12px;
 	padding-left:10px;
 	padding-right:10px;
 }
