@@ -16,7 +16,6 @@ a:hover {
 }
 
 html, body {
-overflow:hidden;
 width: 100%;
 margin: 0px; 
 padding: 0px;
@@ -29,7 +28,7 @@ background-color:white;
 	top:0px;
 	padding:0px;
 	display: inline-block;
-		padding-bottom:10px;
+	padding-bottom:10px;
 }
 
 #title p {
@@ -43,16 +42,17 @@ background-color:white;
 }
 
 #left {
+	height:100vh;
 	float:left;
 	border-right: 1px solid black;
 	box-sizing:border-box;
-	overflow-y: scroll;
 }
 
 iframe {
 	width:15%;
-	height:100vh;
+	height:120vh;
 	float:left;
+	overflow-y: auto;
 }
 
 .intro_text {
@@ -63,12 +63,11 @@ iframe {
 }
 
 .intro_text img {
-	width:50%;
+	width:100%;
 }
 
 #projects {
 	height:100vh;
-	overflow-y: scroll;
 	width:70%;
 	height:100vh;
 	float:left;
@@ -98,7 +97,7 @@ iframe {
 
 #right {
 	width:15%;
-	height:100vh;
+	height:120vh;
 	float:right;
 	border-left: 1px solid black;
 	box-sizing:border-box;
